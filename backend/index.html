@@ -1,0 +1,22 @@
+<html>
+    <body>
+        <h1>hello world</h1>
+    </body>
+    <script>
+        const url ='https://laughing-space-capybara-q74pqr4qrgqrc9gx-3333.app.github.dev';
+        fetch(url,{
+            method:"POST",
+            body: JSON.stringify({
+                name:"Nisha",
+                age:22,
+                rollno:2235
+        }),
+        headers:{
+            'Content-Type':'application/json'
+        }
+    })
+        .then((response)=>{
+            console.log(response)
+        })
+    </script>
+</html>
